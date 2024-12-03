@@ -6,6 +6,6 @@
  (= (isMember $x $list) 
     (case $list 
         ( 
-            ( (Cons $n $s) (if (== $x $n) True (isMember $x $s))) 
+            ( (Cons $h $t) (if (== $x $h) True (isMember $x $t))) 
             ( Nil False) ))
 ) 
