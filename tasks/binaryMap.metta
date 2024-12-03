@@ -1,0 +1,6 @@
+(= (binaryMap $f $y ()) ())
+(= (binaryMap $f $y (:: $x $xs))
+   (:: ($f $x $y) (binaryMap $f $y $xs)))
+(= (add $x $y) (+ $x $y))
+(= (multiply $x $y) (* $x $y))
+(= (concat $x $y) (str $x $y))
